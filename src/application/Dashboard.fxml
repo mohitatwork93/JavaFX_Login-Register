@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="692.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="10.0" style="-fx-background-color: #E96141; -fx-padding: 10 20 10 20;">
+               <children>
+                  <Label prefWidth="120.0" style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold;" text="Admin Panel" />
+                  <Region prefHeight="27.2" prefWidth="430.0" />
+                  <Button fx:id="management1NavBtn" mnemonicParsing="false" onAction="#manage1ButtonAction" style="-fx-background-color: #D9534F; -fx-text-fill: white;" text="Management 1" />
+                  <Button fx:id="management2NavBtn" layoutX="159.0" layoutY="20.0" mnemonicParsing="false" onAction="#manage2ButtonAction" style="-fx-background-color: #D9534F; -fx-text-fill: white;" text="Management 2" />
+                  <Button fx:id="management3NavBtn" layoutX="266.0" layoutY="20.0" mnemonicParsing="false" onAction="#manage3ButtonAction" style="-fx-background-color: #D9534F; -fx-text-fill: white;" text="Management 3" />
+                  <Button fx:id="profileNavBtn" layoutX="373.0" layoutY="20.0" mnemonicParsing="false" onAction="#profileButtonAction" style="-fx-background-color: #D9534F; -fx-text-fill: white;" text="Profile" />
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutButtonAction" style="-fx-background-color: #4A90E2; -fx-text-fill: white;" text="Logout" />
+               </children>
+            </HBox>
+            <HBox prefHeight="59.2" prefWidth="105.2" style="-fx-background-color: transparent; -fx-padding: 12 20 12 20;">
+               <children>
+                  <Label fx:id="titleLabel" alignment="CENTER" prefHeight="35.0" prefWidth="1054.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Student Management" />
+               </children>
+            </HBox>
+            <Separator prefHeight="5.0" prefWidth="105.2" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <StackPane prefHeight="581.6" prefWidth="105.2" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="20.0" prefWidth="105.2" style="-fx-background-color: #E96141;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
